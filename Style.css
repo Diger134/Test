@@ -1,3 +1,16 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    width: 98%;
+    min-width: 450px;
+    margin: 0;
+    padding: 1%;
+}
 .wrapper{
     min-height: 100%;
     position: relative;
@@ -6,4 +19,110 @@
 .content{
     padding-bottom: 0;
     height: 100%;
+}
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    background: url(img/menu.png);
+    width: 72px;
+    height: 51px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchimg{
+    background: url(img/search.png);
+    width: 72px;
+    height: 51px;
+    margin: 5px;
+}
+.headertitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 53px;
+    margin: 0;
+    color: #363636;
+}
+.pheader{
+    font-size: 23px;
+    margin: 0;
+    color: #503737;
+}
+.headerimg{
+    background: url(img/headerimg.png);
+    width: 45px;
+    height: 68px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+section{
+    border: 2px solid #e9e9e9;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    width: 461px;
+    display: inline-block;
+}
+.section1footer{
+    border-top: 2px solid #e9e9e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.imgsection1{
+    background: url(img/contentimg1.jpg);
+    width: 461px;
+    height: 204px;
+}
+.imgsection2{
+    background: url(img/contentimg2jpg.jpg);
+    width: 461px;
+    height: 204px;
+}
+.imgsection3{
+    background: url(img/contentimg3.jpg);
+    width: 461px;
+    height: 204px;
+}
+.imgsection4{
+    background: url(img/contentimg1.jpg);
+    width: 461px;
+    height: 204px;
+}
+.stars{
+    background: url(img/stars.png);
+    width: 80px;
+    height: 20px;
+}
+.divfaceboke{
+    background: url(img/facebook.png);
+    width: 21px;
+    height: 23px;
+}
+@media all and (max-width: 768px){
+    .inputsearch{
+        display: none;
+    }
+}
+@media all and (min-width:0 and max-width: 1500px){
+    main{
+        flex-direction: column;
+    }
 }
