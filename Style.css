@@ -6,10 +6,9 @@ html{
 
 }
 body{
-    width: 98%;
-    min-width: 450px;
+    width: 100%;
+    min-width: 480px;
     margin: 0;
-    padding: 1%;
 }
 .wrapper{
     min-height: 100%;
@@ -68,16 +67,26 @@ h1{
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+.maincontent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    justify-content: start;
+    align-items: center;
 }
 section{
     border: 2px solid #e9e9e9;
     border-radius: 2px;
     margin-bottom: 50px;
-    width: 461px;
-    display: inline-block;
+    width: 460px;
+    margin-right: 10px;
+}
+section:nth-child(2n){
+    margin-right: 0;
 }
 .section1footer{
     border-top: 2px solid #e9e9e9;
@@ -88,22 +97,22 @@ section{
 }
 .imgsection1{
     background: url(img/contentimg1.jpg);
-    width: 461px;
+    width: 460px;
     height: 204px;
 }
 .imgsection2{
     background: url(img/contentimg2jpg.jpg);
-    width: 461px;
+    width: 460px;
     height: 204px;
 }
 .imgsection3{
     background: url(img/contentimg3.jpg);
-    width: 461px;
+    width: 460px;
     height: 204px;
 }
 .imgsection4{
     background: url(img/contentimg1.jpg);
-    width: 461px;
+    width: 460px;
     height: 204px;
 }
 .stars{
@@ -116,13 +125,20 @@ section{
     width: 21px;
     height: 23px;
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
     .inputsearch{
         display: none;
     }
 }
-@media all and (min-width:0 and max-width: 1500px){
-    main{
+@media all and (max-width: 1000px) {
+    .maincontent{
         flex-direction: column;
     }
+    section:nth-child(2n){
+        margin-right: 10px;
+    }
+    section{
+        margin-left: 10px;
+    }
 }
+@media 
