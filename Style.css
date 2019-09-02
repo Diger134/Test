@@ -62,6 +62,14 @@ h1{
 }
 .inputsearch{
     width: 140px;
+    background-color: #f7f7f7;
+    color: #acaaaa;
+    border: ridge;
+    outline: none;
+    
+}
+.inputsearch::-webkit-input-placeholder {
+    color:#8aacaa;
 }
 .headerimg{
     background: url(img/headerimg.png);
@@ -165,7 +173,21 @@ footer{
     background: url(img/loading.png);
     width: 26px;
     height: 26px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: Slidein;
+    animation-delay: 1s;
+    animation-timing-function: linear;
 }
+@keyframes Slidein {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
 @media all and (max-width: 800px) {
     .inputsearch{
         display: none;
