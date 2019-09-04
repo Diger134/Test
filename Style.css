@@ -130,42 +130,12 @@ p{
     width: 80px;
     height: 20px;
 }
-.emptystar1{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 40px 0px;
-}
-.fullstar1{
+.fullstar{
     background-image: url(img/stars.png);
     width: 20px;
     background-position: 0px 0px;
 }
-.emptystar2{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 40px 0px;
-}
-.fullstar2{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 0px 0px;
-}
-.fullstar3{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 0px 0px;
-}
-.emptystar3{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 40px 0px;
-}
-.fullstar4{
-    background-image: url(img/stars.png);
-    width: 20px;
-    background-position: 0px 0px;
-}
-.emptystar4{
+.emptystar{
     background-image: url(img/stars.png);
     width: 20px;
     background-position: 40px 0px;
